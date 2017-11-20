@@ -41,7 +41,7 @@ namespace TeduShop.Web.Api
                  return response;
              });
         }
-
+        [Route("update")]
         public HttpResponseMessage Put(HttpRequestMessage request, PostCategory postCategory)
         {
             Log.Debug("-----------------------Update Reequest------------------");
@@ -63,7 +63,7 @@ namespace TeduShop.Web.Api
             });
         }
 
-
+        [Route("delete")]
         public HttpResponseMessage Delete(HttpRequestMessage request, int id)
         {
             Log.Debug("-----------------------Delete Reequest------------------");
@@ -99,6 +99,7 @@ namespace TeduShop.Web.Api
                 else
                 {
                     var cats = _postCategoryService.GetAll();
+                    Log.Debug(cats.Count().ToString());
                     response = request.CreateResponse(HttpStatusCode.OK, cats);
                 }
                 return response;
