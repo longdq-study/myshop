@@ -24,7 +24,7 @@ namespace TeduShop.Web.Infrastructure.Core
             Func<HttpResponseMessage> function)
         {
             HttpResponseMessage response = null;
-
+            Log.Debug("-----------------------Demo------------------");
             try
             {
                 response = function.Invoke();
