@@ -180,6 +180,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\Core\ApiControllerBase.cs" />
+    <Compile Include="Infrastructure\Extensions\EntityExtension.cs" />
     <Compile Include="Mapping\AutoMapperConfiguration.cs" />
     <Compile Include="Models\PostCategoryViewModel.cs" />
     <Compile Include="Models\PostTagViewModel.cs" />
@@ -229,7 +230,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Assets\admin\" />
     <Folder Include="Assets\client\" />
-    <Folder Include="Infrastructure\Extensions\" />
     <Folder Include="Scripts\plugin\" />
     <Folder Include="Scripts\spa\" />
   </ItemGroup>
