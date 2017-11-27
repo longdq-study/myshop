@@ -27,8 +27,22 @@ namespace TeduShop.Web.Models
 
         public int? ViewCount { set; get; }
 
-        public virtual PostCategoryViewModel PostCategoryViewModel { set; get; }
+        public DateTime? CreatedDate { set; get; }
 
-        public virtual IEnumerable<PostTagViewModel> PostTagViewModels { set; get; }
+        public string CreatedBy { set; get; }
+
+        public DateTime? UpdatedDate { set; get; }
+
+        public string UpdatedBy { set; get; }
+
+        public string MetaKeyword { set; get; }
+
+        public string MetaDescription { set; get; }
+
+        public bool Status { set; get; }
+
+        public virtual PostCategoryViewModel PostCategory { set; get; }
+
+        public virtual IEnumerable<PostTagViewModel> PostTags { set; get; }
     }
 }
