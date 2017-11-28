@@ -38,6 +38,14 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -67,6 +75,10 @@
     <Compile Include="Migrations\201711160320176_updateFiledError.cs" />
     <Compile Include="Migrations\201711160320176_updateFiledError.Designer.cs">
       <DependentUpon>201711160320176_updateFiledError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711281628244_UpdateIdentityModel.cs" />
+    <Compile Include="Migrations\201711281628244_UpdateIdentityModel.Designer.cs">
+      <DependentUpon>201711281628244_UpdateIdentityModel.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -113,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711160320176_updateFiledError.resx">
       <DependentUpon>201711160320176_updateFiledError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711281628244_UpdateIdentityModel.resx">
+      <DependentUpon>201711281628244_UpdateIdentityModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
